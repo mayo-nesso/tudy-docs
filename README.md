@@ -3,14 +3,15 @@
 Public legal pages for the Tudy app, served by GitHub Pages. Static HTML, one file per page, no build step.
 Model: `gracias-docs`. Spec: `docs/10_features/2026_10_07_legal_docs_site.md` in the `tudy-mobile` repo.
 
-| Page | Path |
-|---|---|
-| Privacy policy | `legal/privacy.html` |
-| Terms of use | `legal/terms.html` |
-| Support | `legal/support.html` |
-| Delete account | `legal/delete-account.html` |
+| Page | English | Spanish |
+|---|---|---|
+| Privacy policy | `legal/privacy.html` | `legal/privacy-es.html` |
+| Terms of use | `legal/terms.html` | `legal/terms-es.html` |
+| Support | `legal/support.html` | `legal/support-es.html` |
+| Delete account | `legal/delete-account.html` | `legal/delete-account-es.html` |
 
-Spanish only for now. English versions would go next to them with an `-en` suffix.
+English is the base (same as `gracias-docs`); Spanish carries the `-es` suffix. The two versions of a page must say the
+same thing: change both together.
 
 **The texts are a draft, not legal advice.** A lawyer reviews them before public launch (`tudy-mobile` `docs/PLAN.md`,
 decision 21).

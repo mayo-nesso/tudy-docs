@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Tudy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
+    h1 { font-size: 1.6em; margin-top: 0; }
+    h2 { font-size: 1.1em; margin-top: 1.6em; }
+    p, li, td, th { font-size: 0.95em; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #ddd; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 2em 0; }
+    footer { font-size: 0.85em; color: #888; margin: 3em 0 2em; }
+    mark { background: #fff3b0; }
+    .note { background: #f6f6f6; border-radius: 6px; padding: 10px 14px; }
+  </style>
+</head>
+<body>
+  <h1>Política de Privacidad</h1>
+  <p><em>Versión 2026-10-beta-1 (borrador) · Última actualización: 7 de octubre de 2026</em></p>
+
+  <div class="note">
+    <strong>Resumen.</strong> Tudy es una app para madres, padres y tutores que estudian con sus hijos de básica. Guardamos
+    muy poco: el apodo y el curso de tu hijo o hija, y el texto que escribes para pedir una sesión. Ese texto se
+    borra a los 12 meses. No hay publicidad ni analítica de uso. No vendemos datos.
+  </div>
+
+  <h2>1. Quién es el responsable</h2>
+  <p>Tudy, de Mayonesso. Responsable de los datos: Sergio Mayorga, persona natural, Chile.
+  Contacto para cualquier tema de datos: <a href="mailto:supermayonesso@gmail.com">supermayonesso@gmail.com</a>.</p>
+
+  <h2>2. A quién va dirigida la app</h2>
+  <p>Tudy es para personas de <strong>18 años o más</strong> que son madre, padre o tutor. Tu hijo o hija no usa la app solo
+  y <strong>no tiene cuenta propia</strong>. No pedimos datos al niño o niña; solo los que tú nos das sobre él o ella.</p>
+
+  <h2>3. Qué datos guardamos y para qué</h2>
+  <table>
+    <tr><th>Dato</th><th>Para qué</th><th>Cuánto tiempo</th></tr>
+    <tr><td>Tu cuenta: un identificador interno. Si vinculas tu cuenta con Apple o Google, también el identificador que esos servicios nos entregan.</td><td>Reconocerte y guardar tu progreso.</td><td>Mientras exista tu cuenta.</td></tr>
+    <tr><td>Apodo (o nombre) y curso de cada hijo o hija.</td><td>Ajustar el nivel de las preguntas y mostrar el progreso. El apodo solo se usa dentro de la app y nunca se envía a la IA.</td><td>Mientras exista tu cuenta.</td></tr>
+    <tr><td>El texto que escribes al pedir una sesión (hasta 400 caracteres).</td><td>Armar las preguntas de la sesión.</td><td>12 meses; después se borra el texto y quedan solo la materia, el objetivo y el estado de la sesión.</td></tr>
+    <tr><td>Las sesiones, las preguntas generadas, tus valoraciones y el avance por objetivo.</td><td>Mostrarte el progreso y repasar lo que más cuesta.</td><td>Mientras exista tu cuenta.</td></tr>
+    <tr><td>Registros técnicos de cada llamada (modelo usado, tiempos, tokens, costo, resultado). No incluyen tu texto.</td><td>Controlar costos, calidad y abusos.</td><td>Se conservan sin vínculo a ninguna persona cuando borras tu cuenta.</td></tr>
+    <tr><td>Reportes de errores (ver sección 6).</td><td>Arreglar fallas.</td><td><mark>[PLAZO DE SENTRY POR CONFIRMAR]</mark></td></tr>
+    <tr><td>Tu aceptación de esta política: versión y fecha.</td><td>Poder demostrar que aceptaste.</td><td>Mientras exista tu cuenta.</td></tr>
+  </table>
+  <p>No pedimos ubicación, contactos, fotos ni micrófono. No usamos SDK de publicidad ni analítica de uso.</p>
+
+  <h2>4. Tu texto y los datos personales</h2>
+  <p>Antes de enviar tu texto a un proveedor y antes de guardarlo, un paso automático reemplaza datos personales
+  (nombres, RUT, teléfonos, correos, direcciones web) por marcas como <code>[NOMBRE]</code>. Solo se envía y se guarda
+  el texto ya reemplazado. <strong>Este paso no es perfecto</strong>: un nombre poco común o mal escrito, un colegio o un dato de
+  salud pueden pasar. Por eso te pedimos no escribir nombres ni datos de salud de nadie.</p>
+
+  <h2>5. Con quién compartimos datos y dónde se procesan</h2>
+  <p>Solo usamos proveedores para operar el servicio. No vendemos datos y no los usamos para publicidad.</p>
+  <table>
+    <tr><th>Proveedor</th><th>Qué recibe</th><th>Dónde</th></tr>
+    <tr><td>Supabase (base de datos y funciones)</td><td>Todo lo de la sección 3.</td><td>São Paulo, Brasil.</td></tr>
+    <tr><td>Anthropic (genera las preguntas)</td><td>El curso y el objetivo curricular. Si tu pedido no calza con el currículo, también tu texto ya reemplazado.</td><td>Estados Unidos y otras ubicaciones que el proveedor elige; no podemos fijar el país. Dice no entrenar sus modelos con datos de su API y borrarlos a los 30 días.</td></tr>
+    <tr><td>Google Gemini (búsqueda del objetivo y revisión de respuestas, de pago)</td><td>Tu texto ya reemplazado y el contenido de las preguntas generadas.</td><td>Puede procesarse en cualquier país donde Google opere. En el servicio de pago, Google dice no entrenar con tus datos y conserva registros hasta 55 días para detectar abusos.</td></tr>
+    <tr><td>Clasificador de seguridad (TypeSafe AI)</td><td>Tu texto ya reemplazado, para decidir si es apropiado y a qué objetivo corresponde.</td><td>Estados Unidos. No entrena con tus datos, pero <strong>no declara por cuánto tiempo los conserva</strong>.</td></tr>
+    <tr><td>Sentry (reportes de errores)</td><td>Datos técnicos de la falla. Sin nombre del niño ni tu texto.</td><td><mark>[REGIÓN POR CONFIRMAR]</mark></td></tr>
+  </table>
+  <p>Varios de estos proveedores están fuera de Chile. Los enviamos bajo los contratos de tratamiento de datos de cada
+  uno, que incluyen cláusulas de protección para transferencias internacionales. Si borras tu cuenta, no podemos
+  borrar lo que un proveedor ya conserva por su propio plazo (arriba).</p>
+
+  <h2>6. Reportes de errores</h2>
+  <p>Si la app falla, enviamos un reporte técnico para poder arreglarlo. No incluye el nombre del niño, lo que escribes ni
+  tu correo. Se activan solo después de que aceptas esta política.</p>
+
+  <h2>7. Tus derechos</h2>
+  <p>Puedes pedir acceso a tus datos, rectificarlos, borrarlos, oponerte a un uso, pedir una copia en un formato
+  portable y retirar tu consentimiento en cualquier momento (Ley 21.719 de Chile; RGPD si estás en la Unión Europea).
+  Escríbenos a <a href="mailto:supermayonesso@gmail.com">supermayonesso@gmail.com</a> desde una dirección que podamos asociar a tu
+  cuenta. Respondemos dentro de los plazos que fija la ley. Para borrar la cuenta, mira la
+  <a href="delete-account-es">guía de eliminación</a>. También puedes reclamar ante la autoridad de protección de datos
+  competente.</p>
+
+  <h2>8. Seguridad</h2>
+  <p>Los datos están cifrados en tránsito y en reposo en la infraestructura del proveedor. Cada familia solo puede ver
+  sus propios datos. Ningún sistema es infalible; si ocurre una brecha que te afecte, te avisaremos según la ley.</p>
+
+  <h2>9. Cambios</h2>
+  <p>Si cambiamos algo importante (un proveedor nuevo, otro tipo de dato), subimos la versión de esta política y te
+  pedimos aceptarla de nuevo en la app.</p>
+
+  <hr>
+  <p><a href="terms-es">Términos de Uso</a> · <a href="support-es">Soporte</a> · <a href="delete-account-es">Eliminar cuenta</a></p>
+  <footer>&copy; 2026 Tudy by Mayonesso. Todos los derechos reservados.</footer>
+</body>
+</html>
