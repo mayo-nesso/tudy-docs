@@ -29,9 +29,7 @@ change matters (a new provider, a new kind of data), bump both together.
 
 | Item | Where |
 |---|---|
-| Controller's full name | `privacy.html` section 1 |
 | Sentry region and retention | `privacy.html` sections 3 and 5 (chosen when the Sentry organisation is created, `tudy-mobile` PLAN decision 30) |
-| Classifier vendor: "Jev" is assumed to be TypeSafe AI, unconfirmed | `privacy.html` section 5 |
 | Subscription terms (Phase 5.3) | `terms.html` section 5 |
 | In-app deletion (Phase 5.2) replaces the email-only path | `delete-account.html` |
 | Contact email is a personal placeholder; use a Tudy-only address for the beta and one on Tudy's own domain for launch | all four pages |
