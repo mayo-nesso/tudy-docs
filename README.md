@@ -23,13 +23,17 @@ decision 21).
 
 ## Versions
 
-The privacy policy and the terms state a version, `2026-10-beta-1`, equal to `kConsentVersion` in the app. When a
+The privacy policy and the terms state a version (currently `2026-10-beta-4`), equal to `kConsentVersion` in the app. When a
 change matters (a new provider, a new kind of data), bump both together.
 
 ## Open before launch
 
 | Item | Where |
 |---|---|
+| Resend region (prefer São Paulo, `sa-east-1`, same as Supabase) and email log retention: check the Resend dashboard, fill the placeholder, add the retention to the row | `privacy.html` sections 3 (account row) and 5 |
+| Bump `kConsentVersion` in `tudy-mobile` to `2026-10-beta-4` so the app asks for acceptance again (new data type and provider) | `tudy-mobile` app |
+| Confirm the app has no Apple/Google sign-in and that Delete account exists in its settings (Apple requires deletion to start in-app) | `tudy-mobile` app, `privacy.html` section 7 |
+| Check the terms version and any sign-in/email wording still match beta-4 | `terms.html` |
 | Sentry region and retention | `privacy.html` sections 3 and 5 (chosen when the Sentry organisation is created, `tudy-mobile` PLAN decision 30) |
 | Subscription terms (Phase 5.3) | `terms.html` section 5 |
 | In-app deletion (Phase 5.2) replaces the email-only path | `delete-account.html` |
