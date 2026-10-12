@@ -23,7 +23,7 @@
 
   <div class="note">
     <strong>Summary.</strong> Tudy is an app for mothers, fathers and guardians who study with their primary-school children. We store
-    very little: your email address (only if you create an account, which will be possible soon), your child's nickname and grade, and the text you write to request a session. That text is
+    very little: your email address (only if you save your account with an email), your child's nickname and grade, and the text you write to request a session. That text is
     deleted after 12 months. There is no advertising and no usage analytics. We do not sell data.
   </div>
 
@@ -38,7 +38,7 @@
   <h2>3. What data we store and why</h2>
   <table>
     <tr><th>Data</th><th>Purpose</th><th>How long</th></tr>
-    <tr><td>Your account: an internal identifier and, once email accounts are available and you create one, your email address.</td><td>To recognise you, send you sign-in links (coming soon) and messages about your account (never marketing), and let you use Tudy on another device.</td><td>As long as your account exists.</td></tr>
+    <tr><td>Your account: an internal identifier and, if you save your account with an email, your email address.</td><td>To recognise you, send you the sign-in code by email and messages about your account (never marketing), and let you use Tudy on another device.</td><td>As long as your account exists.</td></tr>
     <tr><td>Nickname (or name) and grade of each child.</td><td>To adjust the level of the questions and show progress. The nickname is only used inside the app and is never sent to the AI.</td><td>As long as your account exists.</td></tr>
     <tr><td>The text you write when requesting a session (up to 400 characters).</td><td>To build the session's questions.</td><td>12 months; after that the text is deleted and only the subject, the objective and the session status remain.</td></tr>
     <tr><td>Your voice, if you use dictation.</td><td>To turn what you say into text, on your phone.</td><td>It is not sent or stored. Only the text you see remains, and it follows the same rules as the text you type.</td></tr>
@@ -63,7 +63,7 @@
     <tr><td>Anthropic (generates the questions)</td><td>The grade and the curriculum objective. If your request does not match the curriculum, also your text, after replacement.</td><td>United States and other locations the provider chooses; we cannot fix the country. It states that it does not train its models on API data and deletes it after 30 days.</td></tr>
     <tr><td>Google Gemini (objective search and answer review, paid)</td><td>Your text after replacement and the content of the generated questions.</td><td>May be processed in any country where Google operates. On the paid service, Google states that it does not train on your data and keeps logs for up to 55 days to detect abuse.</td></tr>
     <tr><td>Safety classifier (TypeSafe AI)</td><td>Your text after replacement, to decide whether it is appropriate and which objective it matches.</td><td>United States. It does not train on your data, but <strong>does not state how long it keeps it</strong>.</td></tr>
-    <tr><td>Resend (sign-in emails, coming soon: not used yet)</td><td>Your email address and the sign-in email we send you.</td><td><mark>[REGION AND LOG RETENTION TO BE CONFIRMED]</mark></td></tr>
+    <tr><td>Resend (emails with the sign-in code)</td><td>Your email address and the email with the sign-in code we send you.</td><td><mark>[REGION AND LOG RETENTION TO BE CONFIRMED]</mark></td></tr>
     <tr><td>Sentry (error reports)</td><td>Technical data about the failure. No child's name and no text from you.</td><td>European Union (Frankfurt, Germany)</td></tr>
   </table>
   <p>Several of these providers are outside Chile. We send data under each provider's data processing agreements, which
