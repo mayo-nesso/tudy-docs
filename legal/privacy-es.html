@@ -19,7 +19,7 @@
 </head>
 <body>
   <h1>Política de Privacidad</h1>
-  <p><em>Versión 2026-10-beta-4 (borrador) · Última actualización: 10 de octubre de 2026</em></p>
+  <p><em>Versión 2026-10-beta-4 (borrador) · Última actualización: 15 de octubre de 2026</em></p>
 
   <div class="note">
     <strong>Resumen.</strong> Tudy es una app para madres, padres y tutores que estudian con sus hijos de básica. Guardamos
@@ -63,17 +63,28 @@
     <tr><td>Anthropic (genera las preguntas)</td><td>El curso y el objetivo curricular. Si tu pedido no calza con el currículo, también tu texto ya reemplazado.</td><td>Estados Unidos y otras ubicaciones que el proveedor elige; no podemos fijar el país. Dice no entrenar sus modelos con datos de su API y borrarlos a los 30 días.</td></tr>
     <tr><td>Google Gemini (búsqueda del objetivo y revisión de respuestas, de pago)</td><td>Tu texto ya reemplazado y el contenido de las preguntas generadas.</td><td>Puede procesarse en cualquier país donde Google opere. En el servicio de pago, Google dice no entrenar con tus datos y conserva registros hasta 55 días para detectar abusos.</td></tr>
     <tr><td>Clasificador de seguridad (TypeSafe AI)</td><td>Tu texto ya reemplazado, para decidir si es apropiado y a qué objetivo corresponde.</td><td>Estados Unidos. No entrena con tus datos, pero <strong>no declara por cuánto tiempo los conserva</strong>.</td></tr>
-    <tr><td>Resend (correos con el código de acceso)</td><td>Tu correo electrónico y el correo con el código de acceso que te enviamos.</td><td>Sudamérica (São Paulo, Brasil). Los registros de envío se conservan 1 día.</td></tr>
-    <tr><td>Sentry (reportes de errores)</td><td>Datos técnicos de la falla. Sin nombre del niño ni tu texto.</td><td>Unión Europea (Frankfurt, Alemania)</td></tr>
+    <tr><td>Resend (correos)</td><td>Tu correo electrónico y los correos que te enviamos: el código de acceso y, si pides una copia de tus datos, el correo con el archivo adjunto. Ese archivo contiene los apodos y cursos de tus hijos, tus sesiones con el texto que escribiste (después del reemplazo, sección 4), las preguntas generadas, tus valoraciones y tu progreso.</td><td>Sudamérica (São Paulo, Brasil). Los registros de envío se conservan 1 día. <strong>No hemos confirmado si Resend conserva el contenido de un correo ni su archivo adjunto, ni por cuánto tiempo.</strong></td></tr>
+    <tr><td>Sentry (reportes de errores)</td><td>Datos técnicos de la falla, desde la app y desde el servidor (sección 6). Sin nombre del niño ni tu texto.</td><td>Unión Europea (Frankfurt, Alemania)</td></tr>
   </table>
   <p>Varios de estos proveedores están fuera de Chile. Los enviamos bajo los contratos de tratamiento de datos de cada
   uno, que incluyen cláusulas de protección para transferencias internacionales. Si borras tu cuenta, no podemos
   borrar lo que un proveedor ya conserva por su propio plazo (arriba).</p>
 
   <h2>6. Reportes de errores</h2>
-  <p>Si el servidor de Tudy falla, enviamos un reporte técnico para poder arreglarlo. No incluye el nombre del niño, lo que
-  escribes ni tu correo. Los envía el servidor, no la app, y pueden enviarse aunque todavía no hayas aceptado esta política
-  (por ejemplo, si el servidor falla al iniciar).</p>
+  <p>Los reportes de errores vienen de dos lugares.</p>
+  <p><strong>La app.</strong> Una vez que aceptas esta política, la app envía a Sentry un reporte técnico cuando tiene un error o
+  se cierra de golpe. Antes de aceptar no envía nada, y si dejas de tener una política aceptada (por ejemplo, borras tu cuenta)
+  deja de enviar. Para los errores del código de la app, el reporte conserva solo el tipo de error, el lugar del código donde ocurrió,
+  la versión de la app y el tipo de compilación; el mensaje del error, lo que escribiste, tu correo, el identificador de tu cuenta y el
+  nombre del niño se descartan antes de enviar. Además desactivamos las capturas de pantalla, los rastros de uso y la medición de rendimiento.
+  <strong>Los cierres bruscos de la capa nativa del sistema del teléfono los reporta el componente nativo de Sentry, y no hemos
+  confirmado campo por campo qué contiene ese reporte.</strong> Normalmente incluye el modelo del teléfono, la versión del sistema
+  operativo y el lugar del código del cierre; en Android puede incluir además un identificador de instalación aleatorio que genera Sentry y
+  datos del aparato como fabricante, memoria y batería. Hasta ahora solo lo hemos probado en iPhone, donde el reporte del cierre no mostró dirección IP.</p>
+  <p><strong>El servidor.</strong> Si el servidor de Tudy falla, también envía un reporte técnico. No incluye el nombre del niño,
+  lo que escribes ni tu correo, y puede enviarse aunque todavía no hayas aceptado esta política (por ejemplo, si el servidor falla
+  al iniciar).</p>
+  <p>Los reportes se conservan 30 días en la Unión Europea (sección 5).</p>
 
   <h2>7. Tus derechos</h2>
   <p>Puedes pedir acceso a tus datos, rectificarlos, borrarlos, oponerte a un uso, pedir una copia en un formato
