@@ -19,7 +19,7 @@
 </head>
 <body>
   <h1>Política de Privacidad</h1>
-  <p><em>Versión 2026-10-beta-4 (borrador) · Última actualización: 15 de octubre de 2026</em></p>
+  <p><em>Versión 2026-10-beta-4 (borrador) · Última actualización: 30 de octubre de 2026</em></p>
 
   <div class="note">
     <strong>Resumen.</strong> Tudy es una app para madres, padres y tutores que estudian con sus hijos de básica. Guardamos
@@ -40,7 +40,7 @@
     <tr><th>Dato</th><th>Para qué</th><th>Cuánto tiempo</th></tr>
     <tr><td>Tu cuenta: un identificador interno y, si guardas tu cuenta con un correo, tu correo electrónico.</td><td>Reconocerte, enviarte el código de acceso por correo y mensajes sobre tu cuenta (nunca publicidad) y que puedas usar Tudy en otro dispositivo.</td><td>Mientras exista tu cuenta.</td></tr>
     <tr><td>Apodo (o nombre) y curso de cada hijo o hija.</td><td>Ajustar el nivel de las preguntas y mostrar el progreso. El apodo solo se usa dentro de la app y nunca se envía a la IA.</td><td>Mientras exista tu cuenta.</td></tr>
-    <tr><td>El texto que escribes al pedir una sesión (hasta 400 caracteres).</td><td>Armar las preguntas de la sesión.</td><td>12 meses; después se borra el texto y quedan solo la materia, el objetivo y el estado de la sesión.</td></tr>
+    <tr><td>El texto que escribes al pedir una sesión (hasta 400 caracteres).</td><td>Armar las preguntas de la sesión.</td><td>12 meses; después se borra el texto, junto con las preguntas que se armaron con él solo para esa sesión, y quedan solo la materia, el objetivo y el estado de la sesión.</td></tr>
     <tr><td>Tu voz, si usas el dictado.</td><td>Convertir lo que dices en texto, en tu teléfono.</td><td>No se envía ni se guarda. Solo queda el texto que ves, que sigue las reglas del texto que escribes.</td></tr>
     <tr><td>Las sesiones, las preguntas generadas, tus valoraciones y el avance por objetivo.</td><td>Mostrarte el progreso y repasar lo que más cuesta.</td><td>Mientras exista tu cuenta.</td></tr>
     <tr><td>Registros técnicos de cada llamada (modelo usado, tiempos, tokens, costo, resultado). No incluyen tu texto.</td><td>Controlar costos, calidad y abusos.</td><td>Se conservan sin vínculo a ninguna persona cuando borras tu cuenta.</td></tr>
@@ -60,7 +60,7 @@
   <table>
     <tr><th>Proveedor</th><th>Qué recibe</th><th>Dónde</th></tr>
     <tr><td>Supabase (base de datos y funciones)</td><td>Todo lo de la sección 3.</td><td>São Paulo, Brasil.</td></tr>
-    <tr><td>Anthropic (genera las preguntas)</td><td>El curso y el objetivo curricular. Si tu pedido no calza con el currículo, también tu texto ya reemplazado.</td><td>Estados Unidos y otras ubicaciones que el proveedor elige; no podemos fijar el país. Dice no entrenar sus modelos con datos de su API y borrarlos a los 30 días.</td></tr>
+    <tr><td>Anthropic (genera las preguntas)</td><td>El curso y el objetivo curricular. Si tu pedido no calza con el currículo, también tu texto ya reemplazado. Si tu texto pide un foco más específico dentro del objetivo (por ejemplo, un tipo de ejercicio), también se envía ese texto ya reemplazado, hasta 200 caracteres, solo para armar la primera pregunta.</td><td>Estados Unidos y otras ubicaciones que el proveedor elige; no podemos fijar el país. Dice no entrenar sus modelos con datos de su API y borrarlos a los 30 días.</td></tr>
     <tr><td>Google Gemini (búsqueda del objetivo y revisión de respuestas, de pago)</td><td>Tu texto ya reemplazado y el contenido de las preguntas generadas.</td><td>Puede procesarse en cualquier país donde Google opere. En el servicio de pago, Google dice no entrenar con tus datos y conserva registros hasta 55 días para detectar abusos.</td></tr>
     <tr><td>Clasificador de seguridad (TypeSafe AI)</td><td>Tu texto ya reemplazado, para decidir si es apropiado y a qué objetivo corresponde.</td><td>Estados Unidos. No entrena con tus datos, pero <strong>no declara por cuánto tiempo los conserva</strong>.</td></tr>
     <tr><td>Resend (correos)</td><td>Tu correo electrónico y los correos que te enviamos: el código de acceso y, si pides una copia de tus datos, el correo con el archivo adjunto. Ese archivo contiene los apodos y cursos de tus hijos, tus sesiones con el texto que escribiste (después del reemplazo, sección 4), las preguntas generadas, tus valoraciones y tu progreso.</td><td>Sudamérica (São Paulo, Brasil). Los registros de envío se conservan 1 día. <strong>No hemos confirmado si Resend conserva el contenido de un correo ni su archivo adjunto, ni por cuánto tiempo.</strong></td></tr>
