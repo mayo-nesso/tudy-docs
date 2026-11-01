@@ -77,10 +77,13 @@
   deja de enviar. Para los errores del código de la app, el reporte conserva solo el tipo de error, el lugar del código donde ocurrió,
   la versión de la app y el tipo de compilación; el mensaje del error, lo que escribiste, tu correo, el identificador de tu cuenta y el
   nombre del niño se descartan antes de enviar. Además desactivamos las capturas de pantalla, los rastros de uso y la medición de rendimiento.
-  <strong>Los cierres bruscos de la capa nativa del sistema del teléfono los reporta el componente nativo de Sentry, y no hemos
-  confirmado campo por campo qué contiene ese reporte.</strong> Normalmente incluye el modelo del teléfono, la versión del sistema
-  operativo y el lugar del código del cierre; en Android puede incluir además un identificador de instalación aleatorio que genera Sentry y
-  datos del aparato como fabricante, memoria y batería. Hasta ahora solo lo hemos probado en iPhone, donde el reporte del cierre no mostró dirección IP.</p>
+  Los cierres bruscos, congelamientos y bloqueos de la capa nativa del sistema del teléfono los reporta el
+  componente nativo de Sentry. Ese reporte lleva solo datos técnicos: el tipo de error y los lugares del código involucrados, la versión
+  y compilación de la app, el modelo del teléfono, la versión del sistema operativo, el idioma y la zona horaria, el estado de memoria,
+  almacenamiento y batería en ese momento, y un identificador aleatorio que Sentry crea al instalar la app. Ese identificador no está
+  vinculado a tu cuenta, tu correo ni tu hijo, y cambia si reinstalas la app. El reporte no incluye tu dirección IP (no la guardamos), tu correo,
+  nombres, lo que escribiste o dictaste, el contenido de las sesiones ni capturas de pantalla. Usamos los reportes solo para encontrar y
+  corregir problemas, nunca para publicidad ni seguimiento.</p>
   <p><strong>El servidor.</strong> Si el servidor de Tudy falla, también envía un reporte técnico. No incluye el nombre del niño,
   lo que escribes ni tu correo, y puede enviarse aunque todavía no hayas aceptado esta política (por ejemplo, si el servidor falla
   al iniciar).</p>
