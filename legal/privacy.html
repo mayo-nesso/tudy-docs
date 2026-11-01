@@ -76,11 +76,13 @@
   crashes. Before you accept, it sends nothing, and if you stop having an accepted policy (for example, you delete your account) it
   stops. For errors inside the app's code, the report keeps only the type of error, where in the code it happened, the app
   version and the type of build; the error message, anything you typed, your email, your account identifier and the child's name are dropped before sending.
-  We also turn off screenshots, usage trails and performance tracking. <strong>Crashes of the phone's own system layer are
-  reported by Sentry's native component, and we have not confirmed field by field what that report contains.</strong> It normally
-  includes the phone model, the operating system version and the code location of the crash; on Android it can also include a
-  random installation identifier that Sentry generates and device facts such as manufacturer, memory and battery. We have only tried
-  it on iPhone so far, where the crash report showed no IP address.</p>
+  We also turn off screenshots, usage trails and performance tracking. Crashes, freezes and not-responding events of the phone's own system layer are
+  reported by Sentry's native component. That report carries technical data only: the type of error and the code locations
+  involved, the app version and build, the phone's model, operating system version, language and time zone, memory, storage and
+  battery state at that moment, and a random identifier that Sentry creates when you install the app. That identifier is not linked to
+  your account, your email or your child, and it changes if you reinstall the app. The report does not include your IP address
+  (we do not store it), your email, names, anything you typed or dictated, session content or screenshots. We use reports only to
+  find and fix problems, never for advertising or tracking.</p>
   <p><strong>The server.</strong> If Tudy's server fails, it also sends a technical report. It does not include the child's name,
   what you write or your email, and it can be sent even before you accept this policy (for example, if the server fails while
   starting).</p>
